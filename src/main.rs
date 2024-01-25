@@ -56,6 +56,14 @@ fn main() {
 
     let mut puzzle = Puzzle::new_random(args.size);
 
+    println!("Welcome to the 15 Puzzle! How to play:\n 
+    - Enter a direction (up, down, left, right) to move the tile into the empty space in that direction.\n
+    - You can also use the first letter of each direction (u, d, l, r).\n
+    - If you rather move the empty space, use the invert flag (-i or --invert).\n
+    - Change the size of the puzzle with the size flag (-s or --size).\n
+    - To quit, press Ctrl+C.\n
+        ");
+
     loop {
         print_puzzle(&puzzle);
 
